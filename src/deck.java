@@ -17,12 +17,12 @@ public class deck {
 		if (x < 2 ) cd = "black";
 		else cd = "red";
 		for (int y =0; y<13; y++) {
-			
+		deck [x*13+y] = new Cards (y+1, names[y],suits[x],cd);	
 			
 		}
 
 		}
-
+//public static void Shuffle (Cards[] deck) {}
 	}
 
 }
