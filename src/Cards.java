@@ -2,22 +2,21 @@
 public class Cards {
 	private int value;
 	private String name;
-	private String suits;
+	private String Suits;
 	private String colour;
 	// Lets use 52 Card
 
 	public Cards(int i, String suits, String names, String colour) {
 		// TODO Auto-generated constructor stub
 		this.value = i;
-		this.suits =suits;
+		this.Suits =suits;
 	    this.name = names;
 	    this.colour = colour;
 	    
-	
 	}
 
 	public String suits() {
-		return suits;
+		return Suits;
 	}
 	public String names() {
 		return names();
@@ -28,7 +27,7 @@ public class Cards {
 	}
 
 	public String printValue() {
-		return (this.name+" of "+this.suits+": "+this.colour);
+		return (this.name+" | "+this.Suits+" | "+this.colour);
 	}
 	}
 	

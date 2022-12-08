@@ -1,21 +1,23 @@
-
+import java.util.*;
 public class deck {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
+
+		
 		Cards[] deck = new Cards[52];
-		String[] names = { "ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king" };
-		String[] suits = { "Spades", "clubs", "Hearts", "diamond" };
+		String[] Names = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
+		String[] Suits = { "Spades", "Clubs", "Hearts", "Diamonds" };
 
 		for (int x = 0; x < 4; x++) {
-			String colour;
+			String Colour;
 			if (x < 2)
-				colour = "black";
+				Colour = "Black";
 			else
-				colour = "red";
+				Colour = "Red";
 			for (int y = 0; y < 13; y++) {
-				deck[x * 13 + y] = new Cards(y + 1, suits[x], names[y], colour);
+				deck[x * 13 + y] = new Cards(y + 1, Suits[x], Names[y], Colour);
 
 			}
 		}
@@ -29,8 +31,17 @@ public class deck {
 	}
 
 	private static void Shuffle(Cards[] deck) {
-		// TODO Auto-generated method stub
 		
+		for (int i =0; i< deck.length; i++) {
+		
+		int Index = (int) (Math.random()*deck.length);
+		Cards temp = deck[i];
+		deck[i] = deck[Index];
+		deck[Index] = temp;
+		}
+		
+	
+	
 	}
 
 }
