@@ -4,7 +4,6 @@ public class deck {
 	public static void main(String[] args) {
 		
 
-
 		
 		Cards[] deck = new Cards[52];
 		String[] Names = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
@@ -27,6 +26,7 @@ public class deck {
 				System.out.println(i.printValue());
 
 			}
+			
 //public static void Shuffle (Cards[] deck) {}
 	}
 
@@ -40,8 +40,15 @@ public class deck {
 		deck[Index] = temp;
 		}
 		
+	ArrayList<String> cards = new ArrayList<>();
+	 //size ();
+		// get(positive); return value 
+	// set(index value );
+	// add(value); // adds to the end
+	// remove(position)
+		
+		
 	
-	
-	}
+	} 
 
 }
